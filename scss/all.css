@@ -10196,7 +10196,7 @@ a:hover {
 
 .box {
   border-radius: 5px;
-  margin: 0 300px;
+  margin: 100px 300px;
   border: 1px solid #91a07b;
 }
 
@@ -10324,6 +10324,10 @@ a:hover {
     padding: 5px 0;
   }
 }
+.forgetPassword-content {
+  margin: 100px 300px;
+}
+
 .password-title {
   text-align: center;
   margin-bottom: 2rem;
@@ -10350,6 +10354,9 @@ a:hover {
   .password-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+  }
+  .forgetPassword-content {
+    margin: 0 100px;
   }
 }
 .icon-title-2 {
