@@ -35,6 +35,24 @@
       "month": "1",
       "day": "10",
       "id": 4
+    },
+    {
+      "email": "bbbb@mail.com",
+      "password": "$2a$10$2Fq1dMEgM.gvBSvAfBl4oez5my30fpCoLoUzqtIgem/WvOGsnfZtC",
+      "name": "bbbb",
+      "year": "1990",
+      "month": "2",
+      "day": "10",
+      "id": 5
+    },
+    {
+      "email": "aaaa@mail.com",
+      "password": "$2a$10$4BsJXIEJ9kGnkycpZdALEuAybAK3zS990.gv6af7BYRhZP2Tc3Wzu",
+      "name": "aaaa",
+      "year": "1998",
+      "month": "7",
+      "day": "17",
+      "id": 6
     }
   ]
 }

@@ -29,7 +29,7 @@ btnjoin.addEventListener("click",function(e){
         return;
     }
 
-    axios.post("http://localhost:3000/signup",{
+    axios.post(`http://localhost:3000/signup`,{
         "email": email.value,
         "password":password.value,
         "name":username.value,
@@ -40,9 +40,9 @@ btnjoin.addEventListener("click",function(e){
     .then(function(response){
         console.log(response.data);
         localStorage.setItem("token",response.data.accessToken);
-        window.setTimeout(function() {
-            location.href = "http://localhost:8080/pages/login.page.html";
-        }, 3000);
+        // window.setTimeout(function() {
+        //     location.href = "http://localhost:8080/pages/login.page.html";
+        // }, 3000);
     })
     .catch(function(error){
         console.log(error.response);
