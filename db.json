@@ -53,6 +53,46 @@
       "month": "7",
       "day": "17",
       "id": 6
+    },
+    {
+      "email": "cccc@mail.com",
+      "password": "$2a$10$h1s9LkAQPeVXL.85Cc.x2.kUC.G.5y6AfLzTMUv/YpFyvc0E0/z8O",
+      "name": "cccc",
+      "year": "1979",
+      "month": "11",
+      "day": "12",
+      "id": 7
+    },
+    {
+      "email": "dddd@mail.com",
+      "password": "$2a$10$VQmuR1aURu8D2o8TN6CP0u4cpfC6L2rS2o8jLppPJidJeK0fRESlW",
+      "name": "dddd",
+      "year": "1998",
+      "month": "1",
+      "day": "10",
+      "id": 8
+    },
+    {
+      "email": "eeee@mail.com",
+      "password": "$2a$10$uxbrc4u0LsklDkm/Lxi3D.OgYnJ3BEBXMn3ERH6hKrHlc1Uh87EmC",
+      "name": "eeee",
+      "year": "1992",
+      "month": "1",
+      "day": "1",
+      "id": 9
     }
-  ]
+  ],
+  "posts": [
+    { 
+      "name": "",
+      "email":  "",
+      "phone":  "",
+      "birthday": "",
+      "address":""
+    }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
 }
