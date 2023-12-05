@@ -27,8 +27,12 @@ btnjoin.addEventListener("click",function(e){
     if(username.value.trim()=="" || email.value.trim()=="" || password.value.trim()==""){
         alert("請正確輸入用戶名、信箱、密碼")
         return;
+    }else{
+        signup();
     }
+});
 
+function signup(){
     axios.post(`http://localhost:3000/signup`,{
         "email": email.value,
         "password":password.value,
@@ -39,6 +43,7 @@ btnjoin.addEventListener("click",function(e){
     })
     .then(function(response){
         console.log(response.data);
+        newData=response.data
         localStorage.setItem("token",response.data.accessToken);
         // window.setTimeout(function() {
         //     location.href = "http://localhost:8080/pages/login.page.html";
@@ -48,5 +53,6 @@ btnjoin.addEventListener("click",function(e){
         console.log(error.response);
         alert("註冊失敗，請重新註冊");
     })
-});
+}
+    
 

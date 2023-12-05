@@ -8,21 +8,24 @@ login.addEventListener("click",function(e){
     window.location.href = "http://localhost:8080/pages/login.page.html";
 })
 
-let newData=[];
+// let newData=[];
 
 
 const email=document.querySelector(".email");
 const password=document.querySelector(".password");
 const btnlogin=document.querySelector(".btn-login");
 
+
 btnlogin.addEventListener("click",function(e){
+    e.preventDefault();
     if(email.value.trim()=="" || password.value.trim()==""){
         alert("請正確輸入信箱、密碼")
         return;
     }else{
         logIn()
     }
-})
+});
+
 function logIn(){
     axios.post(`http://localhost:3000/login`,{
         "email": email.value,
@@ -31,8 +34,9 @@ function logIn(){
     .then(function(response){
         
         // token=response.data.accessToken;
-        axios.defaults.headers.common['Authorization']=res.headers.authorization
+        // axios.defaults.headers.common['Authorization']=res.headers.authorization
         console.log(response.data);
+        localStorage.setItem("token",response.data.accessToken);
         alert("登入成功");
         // window.location.href = "signupsuccess.html";
     })
